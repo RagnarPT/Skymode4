@@ -2,6 +2,8 @@
 scoreboard players add @s timer 1
 scoreboard players set @s[scores={timer=16..}] timer 0
 
+function #skymode4:pre_tick
+
 execute if entity @s[scores={timer=0}] run function #skymode4:timer/tick0
 execute if entity @s[scores={timer=1}] run function #skymode4:timer/tick1
 execute if entity @s[scores={timer=2}] run function #skymode4:timer/tick2

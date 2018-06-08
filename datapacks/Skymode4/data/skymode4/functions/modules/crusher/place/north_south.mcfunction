@@ -1,2 +1,2 @@
-summon armor_stand ~ ~ ~ {Invisible:1,NoGravity:1,Marker:1,Tags:[crusherInit],Rotation:[90f]}
-execute as @e[type=armor_stand,tag=crusherInit] at @s run function skymode4:modules/crusher/create
+summon armor_stand ~ ~-0.5 ~ {Tags:[crusher],ArmorItems:[{},{},{},{id:"minecraft:orange_glazed_terracotta",Count:1b}],Invisible:1b,NoGravity:1b,Marker:1b,Rotation:[90f],ArmorDropChances:[0.085F,0.085F,0.085F,0.0F],Passengers:[{CustomDisplayTile:1,id:hopper_minecart,Invulnerable:1,CustomName:"\"Crusher\"",Tags:["invisible_cart","crusherMinecartInit"]}]}
+execute as @e[type=hopper_minecart,tag=crusherMinecartInit] at @s run function skymode4:modules/crusher/create
